@@ -1,0 +1,23 @@
+Sub Moderate()
+Dim LastRow As Double
+LastRow = ActiveSheet.Range("A" & Rows.Count).End(xlUp).Row
+
+For Each ws In ActiveWorkbook.Worksheets
+
+    For i = 2 To LastRow
+    
+        If Cells(i, 11) < 0 Then
+            Cells(i, 11).Interior.ColorIndex = 3
+            
+        Else
+            Cells(i, 11).Interior.ColorIndex = 4
+        End If
+
+        
+        Next i
+        
+Next ws
+
+
+End Sub
+          
