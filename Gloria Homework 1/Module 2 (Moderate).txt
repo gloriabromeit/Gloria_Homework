@@ -1,0 +1,49 @@
+Sub SplitTickers()
+
+Range("O1").Value = "Closing"
+Range("P1").Value = "Open"
+Range("K1").Value = "Yearly Change"
+Range("L1").Value = "% Change"
+
+For Each ws In ActiveWorkbook.Worksheets
+
+Dim TickerDiff As Long
+
+Dim SummaryRow As Integer
+SummaryRow = 2
+
+    For i = 2 To 797711
+    
+    If Cells(i, 1).Value <> Cells(i + 1, 1) Then
+            Cells(SummaryRow, 15) = Cells(i, 6).Value
+            SummaryRow = SummaryRow + 1
+        
+    End If
+    
+     If Cells(i, 1).Value <> Cells(i - 1, 1) Then
+            
+            Cells(SummaryRow, 16) = Cells(i, 6).Value
+            SummaryRow = SummaryRow
+        
+    End If
+        
+    Cells(i, 11) = Cells(i, 15) - Cells(i, 16)
+        
+    If Cells(i, 16) > 0 Then
+     
+    Cells(i, 12) = (Cells(i, 15) - Cells(i, 16)) / Cells(i, 16)
+        
+    Else
+        
+    Cells(i, 12).Value = "null"
+        
+    End If
+        
+        
+    Next i
+        
+Next ws
+
+
+End Sub
+            

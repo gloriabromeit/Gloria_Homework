@@ -1,0 +1,39 @@
+Sub SplitTickers()
+
+Dim TickerTotal As Double
+TickerTotal = 0
+
+Dim TickerSymbol As String
+
+
+Dim SummaryRow As Integer
+SummaryRow = 2
+
+
+For Each ws In ActiveWorkbook.Worksheets
+
+        Range("I1").Value = "Ticker Symbol"
+        Range("J1").Value = "Total Stock Volume"
+
+    For i = 2 To 797711
+
+        TickerTotal = TickerTotal + Cells(i, 7)
+
+            If Cells(i, 1).Value <> Cells(i + 1, 1) Then
+        
+                TickerSymbol = Cells(i, 1).Value
+                Cells(SummaryRow, 9).Value = TickerSymbol
+                Cells(SummaryRow, 10).Value = TickerTotal
+                TickerTotal = 0
+                SummaryRow = SummaryRow + 1
+        
+            End If
+
+
+
+    Next i
+
+Next ws
+
+End Sub
+
