@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Project / Windspeed</title>
+  <h1><a class="one" href="index.html">LATITUDES</h1></a>
+  <script src="content/js/jquery.min.js"></script>
+<script src="content/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="Cloudiness.css">
+</head>
+
+<body>
+
+  <div class="container">
+        <nav class="navbar">
+                <div class="row">
+                        <div class="col-sm-6 col-md-2"><a class="alink" href="index.html">
+                        <div class="box skyblue"> Home</div></a>
+                        </div>
+                        <div class="col-sm-6 col-md-2"><a class="alink" href="Cloudiness.html">
+                          <div class="box skyblue">vs. Cloudiness</div></a>
+                        </div>
+                        <div class="col-sm-6 col-md-2"><a class="alink" href="Temp.html">
+                                <div class="box skyblue">vs. Temp</div></a>
+                              </div>
+                        <div class="col-sm-6 col-md-2"><a class="alink" href="Humidity.html">
+                          <div class="box skyblue">vs. Humidity</div></a>
+                        </div>
+                        <div class="col-sm-6 col-md-2"><a class="alink" href="WindSpeed.html">
+                          <div class="box skyblue"> vs. Wind Speed</div></a>
+                        </div>
+                      
+                              <div class="col-sm-6 col-md-4"><a class="alink" href="Data.html">
+                                    <div class="box skyblue"> Data</div></a>
+                                  </div>
+                                  <div class="col-sm-6 col-md-4">
+                    <ul>
+                            <li> <div class = "box skyblue" >Plots</div>
+                              <ul class="dropdown">
+                                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                                <li><a href="Temp.html">Temperature</a></li>
+                                <li><a href="Humidity.html">Humidity</a></li>
+                                <li><a href="WindSpeed.html">Wind Speed</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4"><a class="alink" href="Compare.html">
+                                <div class="box skyblue"> Comparisons</div></a>
+                              </div>
+                             
+                  </div>
+        </nav>
+    <header class="col-3 col-sm-6 col-md-12">
+            <h1 class="titlebox red">Latitude Vs. Windspeed</h1>
+    </header>
+<p class="explanation">
+    The purpose of this project was to analyze how weather changes as you get sloer
+    to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API
+    to assemble a dataset on over 500 cities. <br/> <br/> 
+    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. Latitude.
+    Factors we looked at included: temperature, cloudiness, wind speed & humidity.  This site provides the
+    source data and visualizations created as part of the analysis, as well as explanations and decsriptions of any trends and
+    correlations witnessed.
+</p>
+<div>
+<!-- <header class="col-sm-12 col-md-12"> -->
+    
+        <div class="imgs">
+        <img src="Resources/WeatherPy_WindSpeed.vs.Lat.png" alt="Windspeed" class="center">
+    </div>
+    <!-- </header> -->
+    </div>
+   
+    <main>
+   
+    </main>
+  </div>
+  
+</body>
+
+</html>

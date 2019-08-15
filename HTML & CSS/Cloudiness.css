@@ -1,0 +1,105 @@
+
+  .box {
+    /* min-height: 40px; */
+    width: 170px;
+    /* padding: 20px; */
+    margin-bottom: 20px;
+
+    /* margin: 10px; */
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Avenir Next";
+    color: white;
+  }
+  .skyblue {
+    background: deepskyblue;
+  }
+    .alink:hover{
+        /* text-decoration:none; */
+        color:black;
+    }
+    a{
+        display: block;
+        color: whitesmoke;
+      }
+    a {color: deepskyblue;}
+
+  .red {
+    background: indianred;
+  }
+  .titlebox {
+    font-size: 50px;
+    min-height: 40px;
+    /* max-width: 900px; */
+    min-width: 350px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Avenir Next"
+  }
+  body {
+
+    background: wheat;
+  }
+  .explanation {
+    padding: 20px;
+    background: whitesmoke;
+    margin: 20px;
+    font-family: "Avenir Next";
+    font-size: 18px;
+  }
+
+  img{
+    /* display: block; */
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  /* .dropdown{
+    position:relative;
+} */
+li {
+    display: block;
+    transition-duration: 0.8s;
+    color: blue;
+    font-size: 20px;
+   }
+   
+   li:hover {
+     cursor: pointer;
+     color: blue;
+   }
+   
+   ul li ul {
+     visibility: hidden;
+     /* opacity: 1; */
+     position: absolute;
+     transition: all 0.8s ease;
+     margin-top: 1rem;
+     left: 0;
+     display: none;
+     color: blue;
+   }
+   
+   ul li:hover > ul,
+   ul li ul:hover {
+     visibility: visible;
+     /* opacity: 1; */
+     display: block;
+     color: blue;
+     background: white;
+     width: 70%;
+   }
+   
+   ul li ul li {
+     /* clear: both; */
+     width: 200%;
+     color: blue;
+   }
+   .dropdown{
+    color: blue;   
+   }
+  
